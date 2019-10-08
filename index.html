@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>GoT Death Quiz</title>
+  <meta name="description" content="Do you know who died before who in Game Of Thrones?">
+  <meta name="author" content="Aditya Agarwal">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="game-wrapper">
+    <header class="game-header">
+      <h1>Game of Thrones Death Quiz</h1>
+    </header>
+    <main class="game-container">
+      <section class="quiz-container">
+        <h2 class="quiz-question">
+          Who died <span class="js-death-time"></span> <span class="js-death-character"></span>?
+        </h2>
+        <ul class="quiz-options-list js-options-list">
+          <li class="quiz-option-item">
+            <button class="quiz-option-button js-option">
+            </button>
+          </li>
+          <li class="quiz-option-item">
+            <button class="quiz-option-button js-option">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="game-score">
+        <div class="score-container"><span class="score-streak js-streak">0</span> <span class="score-static-text">Death Streak</span></div>
+      </section>
+    </main>
+    <footer class="game-footer">
+      <p>Made for Hacktoberfest by these awesome people.</p>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

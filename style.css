@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.game-header {
+  background: #000;
+}
+
+.game-container {
+  flex: 1;
+  display: flex;
+  background-color: purple;
+}
+
+.quiz-container, .game-score {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-question {
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+}
+
+.quiz-options-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-option-item:first-child {
+  margin-bottom: 20px;
+}
+
+.quiz-option-button {
+  background-color: #fff;
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+  min-width: 300px;
+  min-height: 80px;
+  border-radius: 4px;
+}
+
+.quiz-option-button.is-option-incorrect {
+  background-color: red;
+}
+
+.quiz-option-button.is-option-correct {
+  background-color: green;
+}
+
+.score-container {
+  font-size: 36px;
+  color: hsl(300, 15%, 58%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.score-streak {
+  font-size: 200px;
+  color: hsl(300, 26.2%, 47.8%);
+  line-height: 1;
+  font-weight: bold;
+}
+
+.score-static-text {
+  margin-bottom: 35px;
+  margin-left: 10px;
+}
+
+.game-footer {
+  background: #000;
+}
+
+.dbg {
+  border: 2px solid red;
+}
