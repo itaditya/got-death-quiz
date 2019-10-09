@@ -90,15 +90,15 @@ function handleClickOption(event) {
   const buttonClass = isCorrect ? 'is-option-correct' : 'is-option-incorrect';
   selectedOptionElem.classList.add(buttonClass);
 
-  incrementScore();
-  const newScore = store.score;
-
-  document.querySelector('.js-streak').innerText = newScore;
-
   if (!isCorrect) {
     endGame();
     return;
   }
+
+  incrementScore();
+  const newScore = store.score;
+
+  document.querySelector('.js-streak').innerText = newScore;
 
   setTimeout(() => {
     playGame();
