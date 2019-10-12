@@ -14,3 +14,8 @@ Let's see what the longest streak you can achieve.
 * Install serve globally with `npm install -g serve`.
 * In the root folder of this repo, run `serve`.
 * Open the localhost url which `serve` outputs.
+
+## Contributors
+
+* [Aditya Agarwal](https://github.com/itaditya)
+* [Khusharth](https://github.com/khusharth)
