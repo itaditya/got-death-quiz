@@ -18,4 +18,5 @@ Let's see what the longest streak you can achieve.
 ## Contributors
 
 * [Aditya Agarwal](https://github.com/itaditya)
+* [Srihari](https://github.com/Srihari44)
 * [Khusharth](https://github.com/khusharth)
