@@ -128,6 +128,18 @@ function renderQuestion() {
 
 function endGame() {
   console.log('game ended');
+  const clear1 = document.querySelectorAll('.js-options-list');
+  clear1.forEach(elem => {
+    elem.className='is-hidden1';
+  })
+  const clear2 = document.querySelectorAll('.js-quiz-question'); 
+  clear2.forEach(elem => {
+    elem.className='is-hidden1';
+  })
+  const gametext = document.querySelectorAll('.is-hidden2'); 
+  gametext.forEach(elem => {
+    elem.className='end-text';
+  })
 }
 
 

@@ -43,6 +43,26 @@ body {
   align-items: center;
 }
 
+.end-text{
+  color: #bb0a1e;
+  font-size: 42px;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.is-hidden1{
+  display: none;
+}
+
+.is-hidden2{
+  display: none;
+}
+
+.sub-text{
+  color: #fff;
+  font-size: 27px;
+}
+
 .quiz-question {
   font-size: 42px;
   color: #fff;
