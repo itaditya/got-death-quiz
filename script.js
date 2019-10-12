@@ -126,22 +126,11 @@ function renderQuestion() {
   buttonElems[optionBIndex].innerText = question.charDiedAfter;
 }
 
-function endGame() {
-  console.log('game ended');
-  const clear1 = document.querySelectorAll('.js-options-list');
-  clear1.forEach(elem => {
-    elem.className='is-hidden1';
-  })
-  const clear2 = document.querySelectorAll('.js-quiz-question'); 
-  clear2.forEach(elem => {
-    elem.className='is-hidden1';
-  })
-  const gametext = document.querySelectorAll('.is-hidden2'); 
-  gametext.forEach(elem => {
-    elem.className='end-text';
-  })
+function renderGameOver() {
+  document.querySelector('.js-options-list').classList.add('is-hidden');
+  document.querySelector('.js-quiz-question').classList.add('is-hidden');
+  document.querySelector('.js-game-over').classList.remove('is-hidden');
 }
-
 
 function playGame() {
   const question = getRandomQuestion();
@@ -150,6 +139,11 @@ function playGame() {
   // console.log('answer', question.answer); // aditodo remove this
 
   renderQuestion();
+}
+
+function endGame() {
+  // other stuff to do when game over say saving score will be done here.
+  renderGameOver();
 }
 
 async function init() {
