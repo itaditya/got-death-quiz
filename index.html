@@ -19,7 +19,7 @@
     <main class="game-container">
       <section class="quiz-container">
         <h2 class="quiz-question">
-          Who died <span class="js-death-time"></span> <span class="js-death-character"></span>?
+          Who died <span class="js-death-time"></span> <span class="death-character js-death-character"></span><span class="quiz-static-questionmark">?</span>
         </h2>
         <ul class="quiz-options-list js-options-list">
           <li class="quiz-option-item">
@@ -33,7 +33,10 @@
         </ul>
       </section>
       <section class="game-score">
-        <div class="score-container"><span class="score-streak js-streak">0</span> <span class="score-static-text">Death Streak</span></div>
+        <div class="score-container">
+          <div class="score-streak js-streak">0</div>
+          <div class="score-static-text">Death Streak</div>
+        </div>
       </section>
     </main>
     <footer class="game-footer">
