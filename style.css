@@ -20,6 +20,7 @@ body {
   background-color: hsla(0, 0%, 0%, 0.7);
   background-blend-mode: overlay;
   background-size: cover;
+  cursor: url(/assets/knife.cur), pointer;
 }
 
 .game-header {
@@ -72,6 +73,7 @@ body {
 
 .quiz-option-button {
   background-color: #fff;
+  cursor: url(/assets/bloodyknife.cur), pointer;
   color: #333;
   font-size: 32px;
   font-weight: bold;
