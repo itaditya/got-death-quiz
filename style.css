@@ -113,6 +113,13 @@ body {
 
 .game-footer {
   background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.game-footer a {
+  color: #fff;
 }
 
 .dbg {
