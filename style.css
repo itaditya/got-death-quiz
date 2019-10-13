@@ -141,3 +141,29 @@ body {
 .dbg {
   border: 2px solid red;
 }
+
+@media only screen and (max-width: 600px) {
+  .game-container{
+    flex-direction: column;
+  }
+  .game-footer {
+    padding: 20px;
+  }
+  .game-footer p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .game-container{
+    flex-direction: column;
+  }
+  .game-footer {
+    padding: 20px;
+  }
+  .game-footer p {
+    margin: 0;
+    padding: 0;
+  }
+}
