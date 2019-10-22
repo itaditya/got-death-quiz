@@ -130,6 +130,26 @@ function renderGameOver() {
   document.querySelector('.js-options-list').classList.add('is-hidden');
   document.querySelector('.js-quiz-question').classList.add('is-hidden');
   document.querySelector('.js-game-over').classList.remove('is-hidden');
+  document.querySelector('.js-game-restart').addEventListener('click', (event) => {
+    restartGame(event);
+  });
+}
+
+function renderRestartGame() {
+  document.querySelector('.js-streak').innerText = store.score;
+  document.querySelector('.js-game-over').classList.add('is-hidden');
+  document.querySelector('.js-options-list').classList.remove('is-hidden');
+  document.querySelector('.js-quiz-question').classList.remove('is-hidden');
+}
+
+function resetScore() {
+  store.score = 0;
+}
+
+function restartGame() {
+  resetScore();
+  renderRestartGame();
+  playGame();
 }
 
 function playGame() {
