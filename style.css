@@ -201,3 +201,23 @@ body {
     display: inline;
   }
 }
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.anim-fade-in {
+  animation: fade-slide-down 0.5s ease-out forwards;
+}
+
+.anim-fade-in-buttons {
+  animation: fade-slide-down 0.5s 0.2s ease-out forwards;
+}
+
