@@ -1,6 +1,7 @@
 const store = {
   deaths: [],
   score: 0,
+  highScore: 0,
   question: {},
 };
 
@@ -19,6 +20,23 @@ function incrementScore() {
   store.score = newScore;
 
   return newScore;
+}
+
+function saveHighScore() {
+  if (store.score <= store.highScore) {
+    return;
+  }
+  
+  localStorage.setItem('highScore', store.score)
+}
+
+function showHighScore() {
+  const newHighScore = localStorage.getItem('highScore') || 0;
+  store.highScore = newHighScore;
+
+  document.querySelector('.js-high-streak').innerText = newHighScore;
+
+  return newHighScore;
 }
 
 function ajaxGetDeaths() {
@@ -173,10 +191,13 @@ function playGame() {
 
 function endGame() {
   // other stuff to do when game over say saving score will be done here.
+  saveHighScore();
+  showHighScore();
   renderGameOver();
 }
 
 async function init() {
+  showHighScore();
   const deaths = await ajaxGetDeaths();
   setDeaths(deaths);
   playGame();

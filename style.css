@@ -167,7 +167,17 @@ body {
   font-weight: bold;
 }
 
-.score-static-text {
+.high-score-container {
+  font-size: 24px;
+  color: #a51717;
+  text-align: center;
+}
+
+.high-score-streak {
+  font-size: 100px;
+  color: #a51717;
+  line-height: 1;
+  font-weight: bold;
 }
 
 .game-footer {
