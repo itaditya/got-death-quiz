@@ -137,6 +137,8 @@ function renderQuestion() {
 function renderGameOver() {
   document.querySelector('.js-options-list').classList.add('is-hidden');
   document.querySelector('.js-quiz-question').classList.add('is-hidden');
+  document.querySelector('.js-tweet-block').classList.remove('is-hidden');
+  document.querySelector('.js-tweet').href = 'https://twitter.com/intent/tweet?text=Play%20GOT%20Death%20Quiz.%20I%20have%20scored%20%23' + store.score + '&url=https%3A%2F%2Fgot-death-quiz.netlify.com&hashtags=roadtohacktober,hacktoberfest';
   document.querySelector('.js-game-over').classList.remove('is-hidden');
   document.querySelector('.js-game-restart').addEventListener('click', (event) => {
     restartGame(event);
