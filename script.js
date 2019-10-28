@@ -196,10 +196,17 @@ function endGame() {
   renderGameOver();
 }
 
+function playBackgroundMusic() {
+  document.body.addEventListener('click', function (event) {
+    document.getElementById('game-music').play();
+  }, false);
+}
+
 async function init() {
   showHighScore();
   const deaths = await ajaxGetDeaths();
   setDeaths(deaths);
+  playBackgroundMusic();
   playGame();
 
   document.querySelector('.js-options-list').addEventListener('click', (event) => {
